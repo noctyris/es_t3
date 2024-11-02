@@ -21,7 +21,7 @@ section {
 }
 
 #intro {
-    padding: 0 20px;
+  padding: 0 20px;
   font-style: italic;
   font-size: 0.9rem;
   line-height: 1.2rem;
@@ -29,4 +29,20 @@ section {
 
 h2 {
   margin-top: 0;
+}
+
+.pimg {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pimg img {
+  height: 300px;
+  filter: drop-shadow(0 0 100px rgba(255, 255, 255, 1)) ;
+}
+
+.process {
+  padding-left: 10px;
+  border-left: 3px solid gray;
 }
