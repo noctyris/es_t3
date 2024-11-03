@@ -38,13 +38,42 @@ h2 {
 }
 
 .pimg img {
-  height: 300px;
+  padding: 20px;
+  height: 350px;
   background-color: rgba(221, 221, 211, 1);
   border-radius: 50px;
   box-shadow: 0px 0px 89px 10px rgba(221, 221, 211, 1);
+  transition: 0.2s;
 }
 
-.process {
+.pimg:hover img {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 89px 10px #0ff;
+}
+
+h1 {
+  text-align: center;
+}
+
+address, address a {
+  text-align: center;
+  color: #00ddff;
+  text-decoration: none;
+}
+
+address::before {
+  content: "[";
+  transition: 0.2s;
+  padding-right: 10px;
+}
+address::after {
+  content: "]";
+  transition: 0.2s;
   padding-left: 10px;
-  border-left: 3px solid gray;
+}
+address:hover::before {
+  padding-right: 2px;
+}
+address:hover::after {
+  padding-left: 2px;
 }
